@@ -30,11 +30,11 @@
 - (void)click {
     NSLog(@"View2 tap action\n");
 }
-//
-//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-//    NSLog(@"touch in View2");
-//    return true;
-//}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"touch in View2");
+    return true;
+}
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
     NSLog(@"View2 HitTest action\n");
