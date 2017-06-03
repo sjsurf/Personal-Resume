@@ -35,7 +35,7 @@
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
     NSLog(@"View2 HitTest action\n");
-//    if ([self pointInside:point withEvent:event] == self) {
+    NSLog(@"32132131");
     if ([super hitTest:point withEvent:event] != self) {
         return [super hitTest:point withEvent:event];
     } else {
