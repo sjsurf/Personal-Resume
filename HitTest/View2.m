@@ -38,6 +38,8 @@
     NSLog(@"32132131");
     NSLog(@"32132131");
     NSLog(@"32132131");
+    NSLog(@"32132131");
+    NSLog(@"32132131");
     if ([super hitTest:point withEvent:event] != self) {
         return [super hitTest:point withEvent:event];
     } else {
