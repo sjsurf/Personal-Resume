@@ -10,13 +10,10 @@
 
 @implementation View2
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
+    
 }
-*/
+
 - (id)awakeAfterUsingCoder:(NSCoder *)aDecoder {
     [super awakeAfterUsingCoder:aDecoder];
     self.title = @"View2";
@@ -30,11 +27,11 @@
 - (void)click {
     NSLog(@"View2 tap action\n");
 }
-//
-//- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
-//    NSLog(@"touch in View2");
-//    return true;
-//}
+
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"touch in View2");
+    return true;
+}
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
     NSLog(@"View2 HitTest action\n");
